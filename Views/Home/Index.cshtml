@@ -1,0 +1,11 @@
+﻿@model List<personel>
+@foreach (personel eleman in Model.OrderByDescending(a=>a.Maas))
+{
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="col-sm-4">@eleman.Ad</div>
+            <div class="col-sm-4">@eleman.Departman</div>
+            <div class="col-sm-4">@eleman.Maas</div>
+        </div>
+    </div>
+}
